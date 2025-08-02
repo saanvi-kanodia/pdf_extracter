@@ -1,5 +1,5 @@
 ### PDF Extractor with Local LLM
-This repository contains a Python project, encapsulated in a Jupyter Notebook (main.ipynb), designed for extracting information from PDFs and potentially processing images, leveraging a local Large Language Model (LLM) for advanced text understanding and generation.
+This repository contains a Python project, in a Jupyter Notebook (main.ipynb), designed for extracting information from PDFs and processing images, using a local LLM for advanced text understanding and generation.
 
 ## Features
 - PDF Parsing: Utilizes pymupdf to extract content from PDF documents.
@@ -33,20 +33,14 @@ To set up the environment and run the notebook, follow these steps:
 3. Install the required dependencies:
 The main.ipynb notebook itself contains commands to install necessary libraries. You can run the first few cells of the notebook to install them automatically. These include:
 
-``!python3.10 -m pip install --upgrade pip``
-
-``!python3.10 -m pip install torch torchvision torchaudio``
-
-``!python3.10 -m pip install transformers pymupdf pytesseract pillow``
+``!python3.10 -m pip install torch torchvision torchaudio transformers pymupdf pytesseract pillow safetensors``
 
 ``!python3.10 -m pip install --force-reinstall --no-cache-dir llama-cpp-python``
-
-``!python3.10 -m pip install safetensors``
 
 ``!python3.10 -m pip install tqdm numpy opencv-python``
 
 
-Note: The llama-cpp-python installation might require specific build tools depending on your operating system and hardware for optimal performance (e.g., Metal for macOS, CUDA for NVIDIA GPUs).
+Note: The llama-cpp-python installation might require specific build tools depending on your operating system and hardware for optimal performance (e.g., Metal for macOS, CUDA for NVIDIA GPUs).`
 
 4. Download the LLM model:
 This project uses tinyllama-1.1b-chat-v1.0.Q6_K.gguf. You will need to download this model file and place it in the appropriate directory (e.g., /pdf_extracter/ as indicated in the notebook output).
